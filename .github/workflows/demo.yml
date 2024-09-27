@@ -4,7 +4,7 @@ jobs:
   demo:
     runs-on: ubuntu-latest
     steps:
-      - name: Pull an image from GHCR
-        run: docker pull ghcr.io/microbiomedata/nmdc-runtime-fastapi:1.10.0
-      - name: Pull an image from Docker Hub
+      - name: Pull a Python image from Docker Hub
+        run: docker pull python:3
+      - name: Pull a Postgres image from Docker Hub
         run: docker pull postgres:11
